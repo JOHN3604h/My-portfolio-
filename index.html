@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>John's Portfolio</title>
   <style>
     body {
@@ -61,6 +61,42 @@
       color: #ffffff;
     }
 
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #1a1a1a;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #333;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      font-size: 1em;
+    }
+
+    .contact-form button {
+      background-color: #bb86fc;
+      color: #0e0e0e;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #9a6ede;
+    }
+
     footer {
       background-color: #1f1f1f;
       text-align: center;
@@ -87,7 +123,7 @@
 <body>
 
   <header>
-    <h1>John Carry Petit-bois</h1>
+    <h1>John Carey Petitbois</h1>
   </header>
 
   <section>
@@ -111,6 +147,16 @@
         <p>Unique logos to match your brand — from clean and simple to bold and modern.</p>
       </div>
     </div>
+  </section>
+
+  <section>
+    <h2>Contact Me</h2>
+    <form class="contact-form" action="https://formspree.io/f/xrbqgowo" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
