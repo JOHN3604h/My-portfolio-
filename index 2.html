@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Carry Petit-bois | Web Developer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #121212;
+      color: #f5f5f5;
+    }
+
+    header {
+      background: #1a1a1a;
+      color: #a259ff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px #000;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #a259ff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      background: #1e1e1e;
+      text-align: center;
+      border-bottom: 1px solid #2b2b2b;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      color: #a259ff;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #a259ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #7f38e4;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #a259ff;
+    }
+
+    .services ul {
+      list-style-type: square;
+      padding-left: 20px;
+      line-height: 2;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .project {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 5px;
+      border-left: 4px solid #a259ff;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .project h3 {
+      color: #a259ff;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 10px;
+      background: #2b2b2b;
+      border: 1px solid #444;
+      color: #f5f5f5;
+      border-radius: 4px;
+    }
+
+    .contact button {
+      padding: 10px;
+      background: #a259ff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background: #7f38e4;
+    }
+
+    footer {
+      background: #1a1a1a;
+      color: #aaa;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>John Carry Petit-bois</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Hi, I'm a Web Developer</h1>
+  <p>I build custom HTML websites, add cool features, and design logos — all tailored to your needs.</p>
+  <a href="#portfolio" class="btn">View My Work</a>
+</section>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>I'm a passionate web developer with hands-on skills in HTML, CSS, JavaScript, and logo design. I help individuals and businesses bring their online presence to life with responsive, functional, and beautiful websites — no templates, just custom code.</p>
+</section>
+
+<section id="services" class="services">
+  <h2 class="section-title">Services</h2>
+  <ul>
+    <li>Full HTML Website Development</li>
+    <li>Responsive Design (Mobile + Desktop)</li>
+    <li>Custom Features (Forms, Sliders, Buttons, Popups)</li>
+    <li>CSS and JavaScript Integration</li>
+    <li>Logo & Branding Design</li>
+    <li>Fast, Clean, SEO-Ready Code</li>
+  </ul>
+</section>
+
+<section id="portfolio">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>Personal Portfolio Site</h3>
+      <p>Built a fully custom HTML/CSS website to showcase services and contact info. Includes mobile-friendly layout and interactive features.</p>
+    </div>
+    <div class="project">
+      <h3>Business Landing Page</h3>
+      <p>Created a responsive landing page for a local business with logo, service highlights, and contract form.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <form>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p>Or contact me on Fiverr: <strong>your-fiverr-link</strong></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 John Carry Petit-bois. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
