@@ -15,13 +15,26 @@
 
     header {
       background-color: #1f1f1f;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
+      box-shadow: 0 0 20px #bb86fc44;
+      position: relative;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #bb86fc;
+      box-shadow: 0 0 20px #bb86fc;
+      margin-bottom: 20px;
     }
 
     header h1 {
-      margin: 0;
+      margin: 10px 0 0;
       font-size: 2.5em;
+      color: #fff;
+      text-shadow: 0 0 10px #bb86fc;
     }
 
     section {
@@ -32,12 +45,15 @@
     section h2 {
       font-size: 2em;
       margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 0 0 5px #bb86fc;
     }
 
     section p {
       font-size: 1.1em;
       max-width: 800px;
       margin: auto;
+      color: #d0b3ff;
     }
 
     .services {
@@ -54,11 +70,19 @@
       margin: 10px;
       padding: 20px;
       width: 280px;
+      box-shadow: 0 0 15px #2e2e2e;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #bb86fc;
     }
 
     .service h3 {
       margin-top: 0;
       color: #ffffff;
+      text-shadow: 0 0 5px #bb86fc;
     }
 
     .contact-form {
@@ -67,7 +91,7 @@
       background-color: #1a1a1a;
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 0 10px #333;
+      box-shadow: 0 0 15px #bb86fc44;
     }
 
     .contact-form input,
@@ -95,6 +119,7 @@
 
     .contact-form button:hover {
       background-color: #9a6ede;
+      box-shadow: 0 0 10px #bb86fc;
     }
 
     footer {
@@ -103,6 +128,7 @@
       padding: 20px;
       font-size: 0.9em;
       color: #777;
+      box-shadow: 0 -5px 10px #bb86fc22;
     }
 
     @media (max-width: 768px) {
@@ -117,12 +143,19 @@
       .service {
         width: 90%;
       }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
+    <!-- Replace the src URL with your actual GitHub image link -->
+    <img class="profile-pic" src="https://yourusername.github.io/yourrepo/images/yourphoto.jpg" alt="John's Photo">
     <h1>John Carry Petit-bois</h1>
   </header>
 
